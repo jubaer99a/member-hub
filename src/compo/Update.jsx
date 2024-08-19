@@ -10,7 +10,7 @@ function Update() {
   const id = useSelector((val) => val.member.upd)
   const allMem = useSelector((val) => val.member.mdata)
   const dispatch = useDispatch();
-  let jub = allMem.length === 0 ? 'null' : allMem.filter(val => val.id === id);
+  let jub = allMem === undefined ? 'null' : allMem.filter(val => val.id === id);
 
   const [name, setName] = useState(jub[0].name);
   const [age, setAge] = useState(jub[0].age);

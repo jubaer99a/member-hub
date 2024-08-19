@@ -91,7 +91,7 @@ function App() {
 
      <div className="w-full flex items-center justify-center">
 
-     {allMem.length === 0 ? <div className="mt-24">
+     {allMem === undefined ? <div className="mt-24">
         <h2 className="text-[20px] text-[#f7f7f7] text-center font-['PP_Neue_Machina_Inktrap_Medium'] ">No Member Founds</h2>
       </div> :   <table
         
@@ -112,7 +112,7 @@ function App() {
             return <tr className="text-[16px] lg:text-[18px]">
                     <td  className="p-2 capitalize">{meme.name}</td>
                     <td  className="p-2 text-center">{meme.age}</td>
-                    <td className="p-2 flex float-right gap-2">
+                    <td className="p-2 flex float-right gap-3">
                     <i onClick={() => updx(meme.id)}  className="ri-settings-4-fill cursor-pointer text-[#00F0FF] text-[20px]"></i>
                       <i onClick={() => delx(meme.id)} className="ri-delete-bin-5-fill text-[#FF1212] text-[20px] cursor-pointer  "></i></td>
                   </tr>
