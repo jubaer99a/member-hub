@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  background: linear-gradient(to top, #000D87, #040619 80%);
+  overflow-x: hidden;
+}
+
+table tbody tr{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.573);
+}
+
+table tbody tr:nth-last-child(1){
+  border-bottom: none;
+}
